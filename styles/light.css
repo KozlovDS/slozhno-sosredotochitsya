@@ -24,7 +24,18 @@
   visibility: hidden;
 }
 
+@media (width <= 1024px) {
+  .page.theme_light {
+    --title-h1-text-shadow-color: #ff8dcb;
+  }
+}
+
 @media (prefers-color-scheme: light) {
+  @media (width <= 1024px) {
+    .page.theme_auto {
+      --title-h1-text-shadow-color: #ff8dcb;
+    }
+  }
   .page.theme_auto {
     --accent-background-color: #fff1f7;
     --main-text-color: #353430;
