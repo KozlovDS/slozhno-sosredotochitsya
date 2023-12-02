@@ -16,7 +16,6 @@
 
 .header__theme-menu-button:focus,
 .card__link:focus {
-  border: none;
   outline: none;
 }
 
@@ -98,6 +97,7 @@
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--title-h1-text-shadow-color);
 }
+
 .header__text {
   justify-self: end;
   align-self: center;
@@ -141,9 +141,11 @@
 .card__list {
   margin-block-start: 20px;
 }
+
 .card__item:not(:last-child) {
   margin-block-end: 20px;
 }
+
 .card__item-title {
   margin-block-end: 10px;
   font-weight: 400;
@@ -168,7 +170,7 @@
 }
 
 .card__link:focus-visible {
-  border: 1px solid var(--main-text-color);
+  outline: 1px solid var(--main-text-color);
 }
 
 /* gallery */
