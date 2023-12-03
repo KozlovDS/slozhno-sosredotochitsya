@@ -19,6 +19,7 @@
   --title-h3-color: #000028;
   --title-background-color: #ff0070;
   --hero-background-image: url(../images/cover-image-dark.png);
+  --accent-font-family: "IBM Plex mono", monospace;
 }
 
 .decoration-rec {
@@ -28,7 +29,6 @@
   gap: 10px;
   align-self: flex-start;
   margin-inline-end: 8px;
-  animation: rec 1s linear infinite;
 }
 
 .decoration-rec::before {
@@ -44,6 +44,7 @@
   border-radius: 50%;
   box-shadow: 0px 0px 4px 3px #ff0070;
   background-color: #ff0070;
+  animation: rec 1.5s linear infinite;
   inline-size: 10px;
   block-size: 10px;
 }

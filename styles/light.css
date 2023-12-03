@@ -18,10 +18,15 @@
   --title-h3-color: #353430;
   --title-background-color: #ff8dcb;
   --hero-background-image: url(../images/cover-image-light.png);
+  --accent-font-family: "IBM Plex mono", monospace;
 }
 
 .theme_light .decoration-rec {
-  visibility: hidden;
+  display: none;
+}
+
+.theme_light .header {
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 @media (width <= 1024px) {
@@ -32,12 +37,12 @@
 
 @media (prefers-color-scheme: light) {
   @media (width <= 1024px) {
-    .page.theme_auto {
+    :root {
       --title-h1-text-shadow-color: #ff8dcb;
     }
   }
-  
-  .page.theme_auto {
+
+  :root {
     --accent-background-color: #fff1f7;
     --main-text-color: #353430;
     --menu-color: #353430;
@@ -47,9 +52,14 @@
     --title-h3-color: #353430;
     --title-background-color: #ff8dcb;
     --hero-background-image: url(../images/cover-image-light.png);
+    --accent-font-family: "IBM Plex mono", monospace;
   }
 
-  .page.theme_auto .decoration-rec {
-    visibility: hidden;
+  .decoration-rec {
+    display: none;
+  }
+
+  .header {
+    grid-template-rows: 1fr min-content 1fr;
   }
 }
