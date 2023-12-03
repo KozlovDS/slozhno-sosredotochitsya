@@ -22,6 +22,7 @@
   --accent-font-family: "IBM Plex mono", monospace;
 }
 
+.page.theme_dark .decoration-rec,
 .decoration-rec {
   display: flex;
   justify-content: flex-end;
@@ -29,6 +30,10 @@
   gap: 10px;
   align-self: flex-start;
   margin-inline-end: 8px;
+}
+
+.page.theme_dark .header {
+  grid-template-rows: 0px 1fr min-content 1fr;
 }
 
 .decoration-rec::before {
